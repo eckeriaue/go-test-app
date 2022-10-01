@@ -72,16 +72,19 @@ func findD() {
 		var x float64
 		x = (-b) / (2 * a)
 		fmt.Println("Ваше уравнение имеет один коренб")
-		fmt.Println("x: " + fmt.Sprint((x)))
+		// fmt.Println("x: " + fmt.Sprint((x)))
+		fmt.Printf("x: %f", x)
 	case D > 0:
 		var x1 float64
 		var x2 float64
 		x1 = (-b + math.Sqrt(D)) / (2 * a)
 		x2 = (-b - math.Sqrt(D)) / (2 * a)
-		fmt.Println("Ваше уравнение имеет два корня\nD = " + fmt.Sprint(D))
-		fmt.Println("X1:" + fmt.Sprint(x1))
-		fmt.Println("X2:" + fmt.Sprint(x2))
-
+		// fmt.Println("Ваше уравнение имеет два корня\nD = " + fmt.Sprint(D))
+		// fmt.Println("X1:" + fmt.Sprint(x1))
+		// fmt.Println("X2:" + fmt.Sprint(x2))
+		fmt.Printf("Ваше уравнение имеет два корня\nD = %f", D)
+		fmt.Printf("X1: %f", x1)
+		fmt.Printf("X2: %f", x2)
 	case D < 0:
 		fmt.Println("Уравнение не имеет корней")
 	default:
