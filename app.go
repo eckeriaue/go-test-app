@@ -100,6 +100,8 @@ func findD() {
 	// 	fmt.Println("ваше уравнение не имеет корней")
 	// }
 
+	//
+
 	switch {
 	case D == 0:
 		var x float64
