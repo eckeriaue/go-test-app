@@ -5,7 +5,33 @@ import (
 	"math"
 )
 
+func getAllMathOperations(a, b int) map[string]int {
+	mathOperate := map[string]int{
+		"sum": a + b,
+		"dec": a - b,
+		"mul": a * b,
+		"div": a / b,
+	}
+	return mathOperate
+}
+
 func main() {
+
+	var testSlice map[string]int = getAllMathOperations(3, 4)
+
+	fmt.Println(testSlice["dec"])
+	fmt.Println("")
+	fmt.Println("")
+
+	money := map[string]int{
+		"dollar": 1000,
+		"eur":    1231,
+		"rub":    12123,
+	}
+
+	_, status := money["rere"]
+
+	fmt.Print(money["rub"], status)
 
 	findD()
 	// var a int8 = 2
