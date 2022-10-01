@@ -5,18 +5,25 @@ import (
 	"math"
 )
 
-func getAllMathOperations(a, b int) map[string]int {
-	mathOperate := map[string]int{
+func getAllMathOperations(a, b int) (mathOperate map[string]int) {
+	mathOperate = map[string]int{
 		"sum": a + b,
 		"dec": a - b,
 		"mul": a * b,
 		"div": a / b,
 	}
-	return mathOperate
+	return
+}
+
+func returnalTestFunc(x, y int) func() {
+	return func() {
+		fmt.Print(x, y)
+	}
 }
 
 func main() {
 
+	returnalTestFunc(4, 3)()
 	var testSlice map[string]int = getAllMathOperations(3, 4)
 
 	fmt.Println(testSlice["dec"])
