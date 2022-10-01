@@ -15,8 +15,6 @@ func getAllMathOperations(a, b int) (mathOperate map[string]int) {
 	return
 }
 
-// func calculateSetValues (a,b int)
-
 func returnalTestFunc(x, y int) func() {
 	return func() {
 		fmt.Print(x, y)
